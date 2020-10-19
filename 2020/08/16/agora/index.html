@@ -19,7 +19,7 @@
 <meta property="og:description" content="视频接入问题总结  1、作为主播 live-pusher，需要获取摄像头和麦克风权限   可提前授权，用户拒绝的时候，可以做一些操作** 一旦用户明确同意或拒绝过授权，其授权关系会记录在后台，直到用户主动删除小程序。 12345678910111213wx.getSetting(&amp;#123;  success: (res) =&amp;gt; &amp;#123;    const &amp;#123; authSet">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://wangyuanli.cn/assets/images/agora-error.png">
-<meta property="og:updated_time" content="2020-10-19T10:25:36.285Z">
+<meta property="og:updated_time" content="2020-10-19T10:51:08.018Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序视频通话的问题总结">
 <meta name="twitter:description" content="视频接入问题总结  1、作为主播 live-pusher，需要获取摄像头和麦克风权限   可提前授权，用户拒绝的时候，可以做一些操作** 一旦用户明确同意或拒绝过授权，其授权关系会记录在后台，直到用户主动删除小程序。 12345678910111213wx.getSetting(&amp;#123;  success: (res) =&amp;gt; &amp;#123;    const &amp;#123; authSet">
@@ -173,6 +173,7 @@
 </blockquote>
 <p>可提前授权，用户拒绝的时候，可以做一些操作<br>** 一旦用户明确同意或拒绝过授权，其授权关系会记录在后台，直到用户主动删除小程序。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">wx.getSetting(&#123;</span><br><span class="line">  success: <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> &#123; authSetting &#125; = res;</span><br><span class="line">    <span class="keyword">if</span> (!authSetting[<span class="string">'scope.camera'</span>]) &#123;</span><br><span class="line">       wx.authorize(&#123;</span><br><span class="line">          scope: <span class="string">'scope.camera'</span>,</span><br><span class="line">          success: <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            resolve();</span><br><span class="line">          &#125;,</span><br><span class="line">       &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <blockquote>
 <ul>
 <li>2、主播接入，视频黑屏</li>
@@ -419,15 +420,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">代码片段</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -443,6 +436,14 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">安全</a>
               </li>
              
@@ -455,11 +456,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -483,11 +484,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">HTML5，JavaScript</a>
+                <a href="javascript:void(0)" class="js-tag color3">鸡汤</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">鸡汤</a>
+                <a href="javascript:void(0)" class="js-tag color2">HTML5，JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
